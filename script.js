@@ -34,3 +34,17 @@
             }
         });
     });
+
+    var typed = new Typed('.animation', {
+    
+        strings: ['Website Designer', 
+                'Ul Designer',
+                'Website Developer'
+            ],
+           
+            typespeed: 60,
+            backspeed: 60,
+            loop: true,
+            
+    
+      });

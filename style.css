@@ -15,11 +15,14 @@ html{
     padding: 0 80px;
     margin: auto;
 }
+.logo{
+    margin-left: -20%;
+}
 .navbar{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 15px 0;
+    padding: 10px 0;
     background: crimson;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
@@ -67,6 +70,7 @@ html{
      font-size: 23px;
      cursor: pointer;
      display: none;
+     margin-left: 5%;
  }
 
  .scroll-up-btn{
@@ -94,7 +98,77 @@ html{
     pointer-events: auto;  
 }
 
+/* --------scroll down------ */
+.scroll-down{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mouse{
+    width: 2.5rem;
+    height: 5rem;
+   border: 2px solid #fff;
+   border-radius: 2rem;
+   margin-bottom: .5rem;
+   display: flex;
+}
+.mouse span{
+    width: 1rem;
+    height: 1rem;
+    background: crimson;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+    
+}
+.arrow span{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+   border-right-color: crimson;
+   border-bottom-color: #fff;
+   transform: rotate(45deg);
+   animation: arrow-down .5s linear infinite;
+}
 
+@keyframes move-wheel {
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}
+
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+      
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+       
+    }
+    75%{
+        opacity: .75;
+        
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
 
 
 
@@ -509,11 +583,32 @@ button:hover{
     color: red;
     border: 2px solid crimson;
 }
-
-
-
-
-
+/* --------contact page----- */
+.inp-2 input{
+    width: 80%;
+    margin-left: 15%;
+    height: 6vh;
+    border: 1px solid gray;
+}
+.inp-2 input:hover{
+    border: 1px solid lightblue;
+}
+.inp-3 input{
+    width: 80%;
+    height: 6vh;
+    border: 1px solid gray;
+}
+.inp-3 input:hover{
+    border: 1px solid lightblue;
+}
+.sweet-s {
+    
+    margin-left: 7%;
+    
+}
+.submit{
+    margin-left: 66%;
+}
 
 
 
@@ -640,6 +735,8 @@ button:hover{
         .home .home-content .text-3{
             font-size: 27px;
  }
+
+ /* ------contact infor---- */
  
 
 
