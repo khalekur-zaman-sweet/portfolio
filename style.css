@@ -11,13 +11,13 @@ html{
     scroll-behavior: smooth;
 }
 .max-width{
-    max-width: 1300px;
+    max-width: 100%;
     padding: 0 80px;
     margin: auto;
 }
-.logo{
+/* .logo{
     margin-left: -20%;
-}
+} */
 .navbar{
     position: fixed;
     width: 100%;
@@ -604,10 +604,23 @@ button:hover{
 .sweet-s {
     
     margin-left: 7%;
+
     
+}
+.sweet-s textarea{
+    width: 90%;
+    height: 30vh;
 }
 .submit{
     margin-left: 66%;
+}
+.copyright{
+    font-size: 18px;
+}
+.copyright span{
+    border: 1px solid #111;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 
@@ -726,7 +739,17 @@ button:hover{
  @media (max-width: 500px){
     .max-width{
         padding: 0 23px;
+       
           
+        }
+        .navbar{
+            width: 100%;
+        }
+        .logo{
+            margin-left: -40%;
+        }
+        .menu-btn{
+            margin-left: 60%;
         }
         .home .home-content .text-2{
             font-size: 50px;
@@ -735,6 +758,10 @@ button:hover{
         .home .home-content .text-3{
             font-size: 27px;
  }
+ .res-box input{
+     margin-left: 8%;
+ }
+}
 
  /* ------contact infor---- */
  
